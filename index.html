@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/index.css" />
     <title>Spotify</title>
   </head>
@@ -73,11 +74,119 @@
           <div>
             <p>PLAYLIST</p>
             <h1>Músicas curtidas</h1>
+            <span style="display: flex;align-items: center; gap: 5px;">
+            <span class="avatar" style="background-image: url(images/eu_alternativo.jpg);background-size: contain;"></span>
             <p><strong>Guiguizo</strong> 690 músicas</p>
+          </span>
           </div>
         </header>
+        <main>
+          <div class="table-header">
+            <span>#</span>
+            <span>TÍTULO</span>
+            <span>ÁLBUM</span>
+            <span>ADICIONADO EM</span>
+            <span class="clock">&#128343;</span>
+          </div>
+          <hr>
+          <div class="table">
+            <audio id="audioPlayer" controls autoplay style="display: none;"></audio>
+
+            <div class="table-row">
+              <span onclick="TocarMusica('1VuZQlsQBTQSrJoDMWM8muKN_QNRPHNiD')" style="cursor: pointer;">1</span>
+              <span class="track">
+                <span class="album"><img src="images/transmissions.jpg" alt="" height="40px"></span>
+                <span>
+                  <p class="title">MY DEMONS</p>
+                  <p class="album-name">TRANSMISSIONS</p>
+                </span>
+              </span>
+              <span>TRANSMISSIONS</span>
+              <span>21 de fev. de 2022</span>
+              <span class="clock">4 : 48</span>
+            </div>
+
+            <div class="table-row">
+              <span onclick="TocarMusica('1nk1hjJS4tW5cC8C7QFxckMXxw3qQhP4u')" style="cursor: pointer;">1</span>
+              <span class="track">
+                <span class="album"><img src="images/dearagony.jpg" alt="" height="40px"></span>
+                <span>
+                  <p class="title">I WILL NOT BOW</p>
+                  <p class="album-name">DEAR AGONY</p>
+                </span>
+              </span>
+              <span>DEAR AGONY</span>
+              <span>21 de fev. de 2022</span>
+              <span class="clock">3 : 36</span>
+            </div>
+
+            <div class="table-row">
+              <span onclick="TocarMusica()" style="cursor: pointer;">1</span>
+              <span class="track">
+                <span class="album"><img src="images/divisions.jpg" alt="divisions" height="40px"></span>
+                <span>
+                  <p class="title">WHERE THE SKIES END</p>
+                  <p class="album-name">DIVISIONS</p>
+                </span>
+              </span>
+              <span>DIVISIONS</span>
+              <span>21 de fev. de 2022</span>
+              <span class="clock">4 : 45</span>
+            </div>
+
+            <div class="table-row">
+              <span onclick="TocarMusica()" style="cursor: pointer;">1</span>
+              <span class="track">
+                <span class="album"><img src="images/divisions.jpg" alt="divisions" height="40px"></span>
+                <span>
+                  <p class="title">WHERE THE SKIES END</p>
+                  <p class="album-name">DIVISIONS</p>
+                </span>
+              </span>
+              <span>DIVISIONS</span>
+              <span>21 de fev. de 2022</span>
+              <span class="clock">4 : 45</span>
+            </div>
+
+            <div class="table-row">
+              <span onclick="TocarMusica()" style="cursor: pointer;">1</span>
+              <span class="track">
+                <span class="album"><img src="images/divisions.jpg" alt="divisions" height="40px"></span>
+                <span>
+                  <p class="title">WHERE THE SKIES END</p>
+                  <p class="album-name">DIVISIONS</p>
+                </span>
+              </span>
+              <span>DIVISIONS</span>
+              <span>21 de fev. de 2022</span>
+              <span class="clock">4 : 45</span>
+            </div>
+
+            <div class="table-row">
+              <span onclick="TocarMusica()" style="cursor: pointer;">1</span>
+              <span class="track">
+                <span class="album"><img src="images/divisions.jpg" alt="divisions" height="40px"></span>
+                <span>
+                  <p class="title">WHERE THE SKIES END</p>
+                  <p class="album-name">DIVISIONS</p>
+                </span>
+              </span>
+              <span>DIVISIONS</span>
+              <span>21 de fev. de 2022</span>
+              <span class="clock">4 : 45</span>
+            </div>
+
+          </div>
+        </main>
       </div>
     </div>
     <footer class="footer">alô</footer>
+    <script>
+      var TocarMusica = function(url){
+        $("#audioPlayer").attr('src',`https://docs.google.com/uc?export=download&id=${url}`);   
+      }
+        
+    </script>
+ 
   </body>
 </html>
