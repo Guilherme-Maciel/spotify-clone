@@ -199,10 +199,65 @@ body{
     font-weight: 800;
 }
 
-footer.footer{
+footer{
     height: 10vh;
     background-color: #181818;
     width: 100vw;
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
+footer div.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .player{
+    display: flex;
+    gap: 30px;
+    justify-self: center;
+    width: 180px;
+
+}
+footer .song-informations{
+    margin-left: 20px;
+    width: 180px;
+    
+}
+
+footer .volume{
+    margin-right: 20px;
+    justify-self: flex-end;
+    width: 180px;
+}
+
+footer div.footer ion-icon{
+    color: white;
+}
+
+footer span.track{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+footer span.track span p{
+    line-height: 0.4;
+    font-size: 12px;
+}
+
+footer span.track span .title{
+    color: aliceblue;
+    font-weight: 800;
+}
+footer span.track span .album-name{
+    color: #979797;
+    font-weight: 800;
+}
+
+
+
 
